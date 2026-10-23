@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TED Talk (the original): music video made in code | aditazzz</title>
+<meta name="description" content="I asked Ted if the file was ready. He said &quot;so — stepping back,&quot; somebody dimmed the lights, and our fifteen-minute standup became an eighteen-minute…">
+<link rel="canonical" href="https://aditazzz.github.io/videos/ted-talk/">
+<meta name="theme-color" content="#0c0c0b">
+<meta property="og:type" content="video.other">
+<meta property="og:site_name" content="aditazzz">
+<meta property="og:title" content="TED Talk (the original): music video made in code | aditazzz">
+<meta property="og:description" content="I asked Ted if the file was ready. He said &quot;so — stepping back,&quot; somebody dimmed the lights, and our fifteen-minute standup became an eighteen-minute…">
+<meta property="og:url" content="https://aditazzz.github.io/videos/ted-talk/">
+<meta property="og:image" content="https://aditazzz.github.io/videos/ted-talk/thumbnail.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TED Talk (the original): music video made in code | aditazzz">
+<meta name="twitter:description" content="I asked Ted if the file was ready. He said &quot;so — stepping back,&quot; somebody dimmed the lights, and our fifteen-minute standup became an eighteen-minute…">
+<meta name="twitter:image" content="https://aditazzz.github.io/videos/ted-talk/thumbnail.jpg">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "MusicGroup", "@id": "https://aditazzz.github.io/#artist", "name": "aditazzz", "url": "https://aditazzz.github.io/", "genre": ["AI Doompop", "Darkwave", "Synthpop"], "sameAs": ["https://www.youtube.com/@adita_zzz", "https://open.spotify.com/artist/7mi7sz2NTgTWUAj1zmijJv", "https://www.instagram.com/aditazzz.music/", "https://linktr.ee/aditazzz", "https://github.com/aditazzz"]}, {"@type": "VideoObject", "@id": "https://aditazzz.github.io/videos/ted-talk/#video", "name": "TED Talk (the original)", "description": "I asked Ted if the file was ready. He said \"so — stepping back,\" somebody dimmed the lights, and our fifteen-minute standup became an eighteen-minute…", "thumbnailUrl": ["https://aditazzz.github.io/videos/ted-talk/thumbnail.jpg", "https://i.ytimg.com/vi/fj7HNVj7s1A/maxresdefault.jpg"], "uploadDate": "2026-10-13T04:39:40-07:00", "duration": "PT2M41S", "embedUrl": "https://www.youtube.com/embed/fj7HNVj7s1A", "url": "https://www.youtube.com/watch?v=fj7HNVj7s1A", "author": {"@id": "https://aditazzz.github.io/#artist"}, "genre": "AI Doompop"}, {"@type": "MusicRecording", "name": "TED Talk (the original)", "url": "https://aditazzz.github.io/videos/ted-talk/", "byArtist": {"@id": "https://aditazzz.github.io/#artist"}, "duration": "PT2M41S", "recordingOf": {"@type": "MusicComposition", "name": "TED Talk (the original)", "lyricist": {"@id": "https://aditazzz.github.io/#artist"}}}, {"@type": "SoftwareSourceCode", "name": "TED Talk (the original) scene code", "codeRepository": "https://github.com/aditazzz/Suno-YouTube-aditazzz-Music/tree/main/songs/ted-talk", "programmingLanguage": "Python", "license": "https://opensource.org/licenses/MIT"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Videos", "item": "https://aditazzz.github.io/"}, {"@type": "ListItem", "position": 2, "name": "TED Talk (the original)", "item": "https://aditazzz.github.io/videos/ted-talk/"}]}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap bar">
+  <a class="mark" href="/" aria-label="aditazzz home">aditazzz</a>
+  <nav aria-label="Main"><a href="/#videos">Videos</a><a href="/#how">How it's made</a><a href="https://github.com/aditazzz/Suno-YouTube-aditazzz-Music">Code</a><a class="sub" href="https://www.youtube.com/@adita_zzz?sub_confirmation=1">Subscribe</a></nav>
+</div></header>
+<main id="main">
+<article class="wrap song">
+  <p class="crumb"><a href="/#videos">Videos</a> <span aria-hidden="true">/</span> TED Talk (the original)</p>
+  <h1>TED Talk (the original)</h1>
+  <p class="story">I asked Ted if the file was ready. He said "so — stepping back," somebody dimmed the lights, and our fifteen-minute standup became an eighteen-minute keynote with no slides and no point. 🎤</p>
+  <div class="player">
+    <button class="yt" data-id="fj7HNVj7s1A" aria-label="Play TED Talk (the original)">
+      <img src="thumbnail.jpg" alt="TED Talk (the original): music video thumbnail" width="960" height="540">
+      <span class="play" aria-hidden="true"></span>
+    </button>
+    <p class="under"><a href="https://www.youtube.com/watch?v=fj7HNVj7s1A">Watch on YouTube</a> · 2:41 · <a class="subscribe" href="https://www.youtube.com/@adita_zzz?sub_confirmation=1">Subscribe to @adita_zzz</a></p>
+  </div>
+
+  <section class="code" aria-labelledby="code-h">
+    <div class="code-head"><h2 id="code-h">The code behind it</h2>
+      <p>Every frame of this video is drawn by a Python program. This is the heart of it, from <code>scene.py</code>, line 592.</p></div>
+    <div class="term" data-lock>
+      <div class="term-bar"><span></span><span></span><span></span><b>songs/ted-talk/scene.py</b>
+        <button class="copy" type="button" data-copy>Copy with credit</button></div>
+      <pre><code><span class="k">def</span> <span class="f">render_frame</span>(t, W=<span class="n">1920</span>, H=<span class="n">1080</span>, fi=<span class="n">0</span>):
+    vert = H &gt; W; ts = min(W, H) / <span class="n">1080</span>
+    SW, SH = (W * <span class="n">2</span> // <span class="n">3</span>) // <span class="n">2</span> * <span class="n">2</span>, (H * <span class="n">2</span> // <span class="n">3</span>) // <span class="n">2</span> * <span class="n">2</span>
+    sc, cam = render_scene(t, SW, SH, vert)
+    img = cv2.resize(C.tonemap(sc, <span class="n">1.0</span>), (W, H), interpolation=cv2.INTER_LINEAR)
+    <span class="k">if</span> <span class="k">not</span> C.STATE[<span class="s">&quot;clean&quot;</span>]:
+        bridge(img, t, W, H, ts)
+        hud(img, t, W, H, ts)
+        question(img, t, W, H, ts)
+        calendar(img, t, W, H, ts)
+        final_cards(img, t, W, H, ts)
+        C.overlay_stamp(img, t, W, H, TM, word=<span class="s">&quot;TED TALK&quot;</span>, caption=(<span class="s">&quot;it&#x27;s always a&quot;</span> <span class="k">if</span> t &gt; T_ALWAYS - <span class="n">0.3</span> <span class="k">else</span> <span class="s">&quot;it&#x27;s a&quot;</span>),
+                        glow_color=RED2, caption_above=<span class="k">True</span>, hide=<span class="k">lambda</span> tt: phase(tt) == <span class="s">&quot;bridge&quot;</span>)
+        skip = <span class="k">lambda</span> L: L[<span class="s">&#x27;text&#x27;</span>].startswith(<span class="s">&quot;It&#x27;s a Ted talk&quot;</span>) <span class="k">or</span> L[<span class="s">&#x27;text&#x27;</span>].startswith(<span class="s">&quot;It&#x27;s always&quot;</span>)
+        C.overlay_lyrics(img, t, W, H, TM, active=hexc(<span class="s">&#x27;ffd27a&#x27;</span>), glow=AMBER, skip=skip, band=phase(t) != <span class="s">&quot;bridge&quot;</span>)
+        end_card(img, t, W, H, ts)
+    <span class="k">else</span>:
+        bridge(img, t, W, H, ts) <span class="k">if</span> phase(t) == <span class="s">&quot;bridge&quot;</span> <span class="k">else</span> <span class="k">None</span>
+    <span class="c"># flashes: stage reveal, each stamp, final return</span>
+    fl = <span class="n">0.0</span>
+    <span class="k">for</span> s <span class="k">in</span> TM.stamps:
+        <span class="k">if</span> <span class="n">0</span> &lt;= t - s &lt; <span class="n">1</span>: fl += <span class="n">0.3</span> * math.exp(-(t - s) * <span class="n">7</span>)
+    <span class="k">if</span> <span class="n">0</span> &lt;= t - T_FINAL &lt; <span class="n">2</span>: fl += <span class="n">0.6</span> * math.exp(-(t - T_FINAL) * <span class="n">3</span>)
+    gl = <span class="n">0.0</span>
+    <span class="k">if</span> <span class="n">0</span> &lt;= t - T_STOP &lt; <span class="n">0.25</span>: gl += <span class="n">0.8</span>
+    <span class="k">for</span> s <span class="k">in</span> TM.stamps:
+        <span class="k">if</span> <span class="n">0</span> &lt;= t - s &lt; <span class="n">0.12</span>: gl += <span class="n">0.3</span>
+    <span class="k">return</span> C.finish(img, t, fi, DUR, flash=fl, flash_col=hexc(<span class="s">&#x27;ffe2c4&#x27;</span>), glitch_amt=gl)</code></pre>
+      <div class="veil" aria-hidden="true"><p class="veil-t">ENCRYPTED</p><p>Press play on the video to decrypt the code.</p>
+        <button type="button" class="veil-b" data-unlock>Decrypt it now</button></div>
+      <textarea hidden data-attrib># From &quot;TED Talk (the original)&quot; by aditazzz, a music video written in code with Claude.
+# Watch: https://youtu.be/fj7HNVj7s1A
+# Subscribe: https://www.youtube.com/@adita_zzz?sub_confirmation=1
+# Code: https://github.com/aditazzz/Suno-YouTube-aditazzz-Music/tree/main/songs/ted-talk (MIT). If you use it, please credit aditazzz and link the video.
+
+</textarea>
+    </div>
+    <p class="more"><a href="https://github.com/aditazzz/Suno-YouTube-aditazzz-Music/tree/main/songs/ted-talk">Read all 619 lines on GitHub</a>. If you use it, credit aditazzz and link the video.</p>
+  </section>
+
+  <section><h2>What you see</h2><p>The standup circle turns into a stage, the red rug unrolls, the meeting clock blows past 15:00, and Dana's video tile slowly becomes a ghost.</p></section>
+
+  <section class="files"><h2>Files</h2>
+    <div class="tablewrap"><table><thead><tr><th>File</th><th class="num">Lines</th><th>What it draws</th></tr></thead><tbody><tr><td><a href="https://github.com/aditazzz/Suno-YouTube-aditazzz-Music/blob/main/songs/ted-talk/scene.py"><code>scene.py</code></a></td><td class="num">619</td><td>TED Talk — the standup that turns into a keynote.</td></tr></tbody></table></div>
+  </section>
+
+  <section><h2>By the numbers</h2><ul><li>2:41 long, 9,654 frames rendered (16:9 and 9:16, 30 fps)</li><li>57 lyric lines and 274 words synced to the vocals, 144 BPM</li><li>5 Shorts and Reels cut from it</li></ul></section>
+
+  <section class="lyrics"><h2>Lyrics</h2><p class="by">Words and music by aditazzz.</p><div class="stanza"><p class="sec">Verse</p><p>He doesn&#x27;t answer questions.<br>He responds to them.<br>There&#x27;s a difference and you&#x27;ll feel it<br>about four minutes in.<br>I asked him if the file was ready.<br>He said, so — stepping back.<br>Somebody dim the lights,<br>everybody sit down.</p></div>
+<div class="stanza"><p class="sec">Chorus</p><p>It&#x27;s a Ted talk.<br>Eighteen minutes, no slides, no point.<br>There&#x27;s a story about his father.<br>There&#x27;s a pause he thinks is powerful.<br>It&#x27;s a Ted talk.<br>He&#x27;ll circle back to what I asked<br>right after the part<br>where he was young<br>and nobody believed in him.</p></div>
+<div class="stanza"><p class="sec">Verse</p><p>He starts every sentence with so.<br>He ends every thought with right?<br>He says, the real question is,<br>about the question I just asked.<br>He said journey. He said unlock.<br>He said, let me tell you a story,<br>and I watched my calendar<br>give up.</p></div>
+<div class="stanza"><p class="sec">Chorus</p><p>It&#x27;s a Ted talk.<br>Eighteen minutes, no slides, no point.<br>There&#x27;s a story about his father.<br>There&#x27;s a pause he thinks is powerful.<br>It&#x27;s a Ted talk.<br>He&#x27;ll circle back to what I asked<br>right after the part<br>where he was young<br>and nobody believed in him.</p></div>
+<div class="stanza"><p class="sec">Bridge</p><p>Ted.<br>This is a standup.<br>It is fifteen minutes<br>for eight people.<br>You have used six.<br>Dana had a hard stop.<br>Dana has had a hard stop<br>for two years.<br>Dana is a ghost now, Ted.<br>You did that.</p></div>
+<div class="stanza"><p class="sec">Final chorus</p><p>It&#x27;s a Ted talk.<br>Nobody scheduled it.<br>Nobody can end it.<br>There&#x27;s no Q and A,<br>because there&#x27;s no A,<br>because there was never a Q.<br>It&#x27;s a Ted talk.<br>It&#x27;s always a Ted talk.</p></div>
+<div class="stanza"><p class="sec">Outro</p><p>Anyway — happy to take this offline.<br>He says.<br>Having taken it offline.<br>Into a place<br>none of us can reach.</p></div></section>
+
+  <aside class="next"><a href="/videos/snowflake-undrop/"><img src="/videos/snowflake-undrop/thumbnail.jpg" alt="" width="320" height="180" loading="lazy">
+    <span><small>Next video</small>Snowflake Undrop</span></a></aside>
+</article>
+</main>
+<footer class="foot"><div class="wrap">
+  <p class="links"><a href="https://www.youtube.com/@adita_zzz?sub_confirmation=1">YouTube</a><a href="https://open.spotify.com/artist/7mi7sz2NTgTWUAj1zmijJv">Spotify</a><a href="https://www.instagram.com/aditazzz.music/">Instagram</a><a href="https://github.com/aditazzz/Suno-YouTube-aditazzz-Music">GitHub</a><a href="https://linktr.ee/aditazzz">All links</a></p>
+  <p class="fine">Songs, lyrics and concepts by aditazzz. Videos written in code by Claude. The code is MIT-licensed; the songs, lyrics and artwork are all rights reserved.</p>
+</div></footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>
