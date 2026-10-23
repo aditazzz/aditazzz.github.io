@@ -40,12 +40,12 @@
       <img src="thumbnail.jpg" alt="Deployed on a Friday: music video thumbnail" width="960" height="540">
       <span class="play" aria-hidden="true"></span>
     </button>
-    <p class="under"><a href="https://www.youtube.com/watch?v=8DQ2izFZiO0">Watch on YouTube</a> · 3:13 · <a class="subscribe" href="https://www.youtube.com/@adita_zzz?sub_confirmation=1">Subscribe to @adita_zzz</a></p>
+    <p class="under"><a href="https://www.youtube.com/watch?v=8DQ2izFZiO0">Watch on YouTube</a> · 3:13 · video by Claude Opus 5.5 · <a class="subscribe" href="https://www.youtube.com/@adita_zzz?sub_confirmation=1">Subscribe to @adita_zzz</a></p>
   </div>
 
   <section class="code" aria-labelledby="code-h">
     <div class="code-head"><h2 id="code-h">The code behind it</h2>
-      <p>Every frame of this video is drawn by a Python program. This is the heart of it, from <code>scene.py</code>, line 983.</p></div>
+      <p>Every frame of this video is drawn by a Python program. This is the heart of it, from <code>scene.py</code>, line 342.</p></div>
     <div class="term" data-lock>
       <div class="term-bar"><span></span><span></span><span></span><b>songs/deployed-on-a-friday/scene.py</b>
         <button class="copy" type="button" data-copy>Copy with credit</button></div>
@@ -56,9 +56,10 @@
     img = cv2.resize(np.clip(sc, <span class="n">0</span>, <span class="n">1.4</span>).astype(np.float32), (W, H), interpolation=cv2.INTER_LINEAR)
     img = img / (<span class="n">1</span> + np.maximum(img - <span class="n">0.85</span>, <span class="n">0</span>))
     clean = C.STATE[<span class="s">&quot;clean&quot;</span>]
-    story_labels(img, t, W, H, ts, vert)
+    intro_ui(img, t, W, H, ts, vert); v1_ui(img, t, W, H, ts, vert); pre_ui(img, t, W, H, ts, vert)
+    chorus_ui(img, t, W, H, ts, vert); v2_ui(img, t, W, H, ts, vert); bridge_ui(img, t, W, H, ts, vert)
+    v3_ui(img, t, W, H, ts, vert); outro_ui(img, t, W, H, ts, vert)
     <span class="k">if</span> <span class="k">not</span> clean:
-        story_chips(img, t, W, H, ts, vert); chorus_chips(img, t, W, H, ts, vert)
         img *= <span class="n">1</span> - <span class="n">0.45</span> * C.post(W, H).bot
         C.overlay_lyrics(img, t, W, H, TM, active=SUN, glow=CORAL, skip=<span class="k">lambda</span> L: L[<span class="s">&#x27;sec&#x27;</span>] == <span class="s">&quot;INTRO&quot;</span> <span class="k">or</span> L[<span class="s">&#x27;s&#x27;</span>] &gt; T_END)
         C.subscribe_pill(img, t, W, H, lines_in(<span class="s">&quot;CH2&quot;</span>)[-<span class="n">1</span>][<span class="s">&#x27;e&#x27;</span>] + <span class="n">1.0</span>, <span class="n">5.5</span>)
@@ -70,7 +71,8 @@
     <span class="k">if</span> <span class="n">0</span> &lt;= t - T_PAGER &lt; <span class="n">0.3</span>: gl += <span class="n">0.4</span>
     <span class="k">for</span> a, b <span class="k">in</span> PRES:
         <span class="k">if</span> a &lt;= t &lt; b: gl += <span class="n">0.15</span> * bp(t, <span class="n">10</span>)
-    <span class="k">return</span> C.finish(img, t, fi, DUR, flash=fl, flash_col=SUN * <span class="n">0.8</span>, glitch_amt=gl, ca=<span class="n">0.0018</span>)</code></pre>
+    <span class="k">return</span> C.finish(img, t, fi, DUR, flash=fl, flash_col=SUN * <span class="n">0.8</span>, glitch_amt=gl, ca=<span class="n">0.0018</span>)
+    ...</code></pre>
       <div class="veil" aria-hidden="true"><p class="veil-t">ENCRYPTED</p><p>Press play on the video to decrypt the code.</p>
         <button type="button" class="veil-b" data-unlock>Decrypt it now</button></div>
       <textarea hidden data-attrib># From &quot;Deployed on a Friday&quot; by aditazzz, a music video written in code with Claude.
